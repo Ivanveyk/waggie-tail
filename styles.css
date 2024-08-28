@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(80, 154, 167);
+}
+
+.icon-square {
+    border-radius: 30%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adjust the image to cover the area without distortion */
+  }
+  
+  .ratio {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .ratio::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio (height/width * 100%) */
+  }
+  
+  .ratio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
